@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صمّم فيديوهاتك</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>أضف نصك وصورك (اختياري) لتصميم فيديوهاتك وإعلاناتك</h1>
+    <form id="videoForm">
+      <label for="text">النص:</label>
+      <textarea id="text" rows="5" placeholder="اكتب هنا نصك..."></textarea>
+
+      <label for="image1">الصورة الأولى (اختياري):</label>
+      <input type="file" id="image1" accept="image/*" />
+
+      <label for="image2">الصورة الثانية (اختياري):</label>
+      <input type="file" id="image2" accept="image/*" />
+
+      <label for="duration">مدة الفيديو:</label>
+      <select id="duration">
+        <option value="30">30 ثانية (مجانية)</option>
+        <option value="60">60 ثانية</option>
+        <option value="90">90 ثانية</option>
+        <option value="180">3 دقائق</option>
+      </select>
+
+      <p class="note">الفيديو المجاني: حتى 2 فيديوهات كل منها 30 ثانية.</p>
+      <p class="note">الخطة المدفوعة: 7 دولار شهريًا أو 70 دولار سنويًا.</p>
+
+      <button type="submit">ابدأ التصميم</button>
+    </form>
+    <div id="message" class="message"></div>
+
+    <a href="https://drive.google.com/uc?export=download&id=1hHO-jIHlOCWuwCu9p0czMOs-V23ruIC1" target="_blank">
+      <button style="padding: 12px 24px; background-color: green; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 20px;">
+        الفيديو جاهز للتحميل
+      </button>
+    </a>
+
+    <form action="https://www.paypal.com/donate" method="post" target="_blank" style="margin-top: 20px; text-align: center;">
+      <input type="hidden" name="business" value="maged.alam99@gmail.com">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="amount" value="7.00">
+      <input type="submit" value="اشترك الآن بـ 7 دولار" style="padding: 12px 20px; font-size: 16px; background: #0070ba; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
